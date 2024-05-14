@@ -1,0 +1,48 @@
+@import '@/app/styles/mixin.scss';
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  @include fluidText(16, 24);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: var(--colorTeaGreen);
+  color: var(--colorBlack);
+
+  &:hover {
+    box-shadow: 4px 4px 1px 0px var(--colorChartreuse);
+    & .avatar img {
+      scale: 1.05;
+    }
+  }
+}
+
+.avatar {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  & img {
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.linkInfo {
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.header {
+  height: var(--headerHeight);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20rem;
+}
+
+.headerLogo {
+  margin-left: 1rem;
+  font-size: 8rem;
+}
+
+.headerLogoImg {
+  object-fit: contain;
+}

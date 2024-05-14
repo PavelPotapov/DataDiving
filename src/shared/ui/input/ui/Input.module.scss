@@ -1,0 +1,27 @@
+@import '@/app/styles/mixin.scss';
+
+.input {
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--colorWhite);
+  @include fluidText(12, 24);
+
+  & input {
+    min-height: 3rem;
+    padding-inline: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--colorYellowGreen);
+    width: min(655px, 85vw);
+    height: 54px;
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+    border-radius: 1rem;
+  }
+}
+
+.errorMsg {
+  color: var(--colorRed);
+  @include fluidText(8, 12);
+}

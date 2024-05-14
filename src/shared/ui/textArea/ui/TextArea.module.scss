@@ -1,0 +1,22 @@
+@import '@/app/styles/mixin.scss';
+
+.textarea {
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include fluidText(12, 24);
+
+  & textarea {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+    min-height: 15rem;
+    padding-inline: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--colorYellowGreen);
+  }
+}
+
+.errorMsg {
+  color: var(--colorRed);
+}

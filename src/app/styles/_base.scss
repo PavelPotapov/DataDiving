@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--colorOutlineFocusVisible, #6fcf97);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:global(.sr-only, .hidden-focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
+html {
+  font-size: var(--fontSizeBase, 8px);
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scrollbar-gutter: stable;
+}
+
+:global(html.noscroll) {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+  top: var(--st);
+}
+
+body {
+  font-family: var(--fontMain);
+  height: 100%;
+  font-size: 2rem;
+  background-color: var(--colorBlack);
+  color: var(--colorWhite);
+}
+
+:global(#root) {
+  min-height: 100dvh;
+}
+
+:global(.container) {
+  width: min(var(--containerWidth), 100%);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+:global(.flowContainer) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  max-width: 100%;
+  min-height: inherit;
+  position: relative;
+  width: 100%;
+}
+
+:global(.Toastify) {
+  --toastify-font-family: var(--fontMain);
+  --toastify-icon-color-success: var(--colorYellowGreen);
+  --toastify-color-progress-success: var(--colorYellowGreen);
+  --toastify-color-light: var(--colorJet);
+  --toastify-text-color-light: var(--colorWhite);
+  font-size: 2rem;
+}
+
+:global(.Toastify__close-button--light) {
+  color: var(--colorWhite);
+}
+
+
+:global(button.btn) {
+  color: var(--colorJet, #3c6100);
+  background-color: var(--colorYellowGreen);
+  text-align: center;
+  font-style: normal;
+  font-family: var(--fontMain);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.639px;
+  text-transform: uppercase;
+  transition: 0.3s all;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+
+
+  &:hover:not(:disabled) {
+    box-shadow: 3px -3px 1px var(--colorChartreuse);
+    text-shadow: 1px -1px 3px #d7f701;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

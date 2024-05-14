@@ -1,0 +1,29 @@
+.userProfile {
+  padding-top: 3rem;
+}
+
+.userProfileImg {
+  height: clamp(42rem, 25vw, 69rem);
+  width: clamp(42rem, 25vw, 69rem);
+  border-radius: 2rem;
+  overflow: hidden;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.userInfo {
+  padding-top: 2rem;
+}

@@ -1,0 +1,12 @@
+// mixins.scss
+@mixin lineclamp($lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin fluidText($min, $max) {
+  font-size: clamp(#{$min}px, #{calc($max / 1600) * 100}vw, #{$max}px);
+}

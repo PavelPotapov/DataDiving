@@ -1,0 +1,14 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 44rem));
+  grid-auto-rows: 40rem;
+  gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+}
+
+.countSelectedUsers {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 2rem;
+}

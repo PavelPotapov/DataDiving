@@ -1,0 +1,30 @@
+@import '@/app/styles/mixin.scss';
+@import '@/app/styles/keyframes.scss';
+
+$tooltipWidth: 100%;
+$tooltipAnimation: fadeIn 0.5s ease forwards;
+
+.container {
+  display: flex;
+  position: relative;
+  max-width: $tooltipWidth;
+}
+
+.tooltip {
+  position: absolute;
+  min-width: 20rem;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #ff8e00;
+  border-radius: 1.5rem;
+  text-align: center;
+  white-space: pre-line;
+  font-weight: 700;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+  animation: $tooltipAnimation;
+  @include lineclamp(2);
+  //@include fluidText(8, 16, 360, 1200);
+}

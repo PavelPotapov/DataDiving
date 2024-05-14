@@ -1,0 +1,24 @@
+.closeBtn {
+  position: absolute;
+  z-index: 2;
+  right: 1rem;
+  top: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  background: none;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}

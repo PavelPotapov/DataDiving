@@ -1,0 +1,15 @@
+.footer {
+  height: var(--headerHeight);
+  display: flex;
+  justify-content: center;
+  padding-top: 20rem;
+}
+
+.footerLogo {
+  margin-left: 1rem;
+  font-size: 8rem;
+}
+
+.footerLogoImg {
+  object-fit: contain;
+}
