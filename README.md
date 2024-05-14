@@ -69,11 +69,11 @@ Firebase используется как облачное хранилище д�
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/PavelPotapov/testDataDiving
+   git clone https://github.com/PavelPotapov/DataDiving
    ```
 2. Установите зависимости:
    ```bash
-   cd testDataDiving
+   cd DataDiving
    npm install
    ```
 3. Запуск
